@@ -20,6 +20,8 @@ import {PaginationModule} from "ngx-bootstrap/pagination"; // from ng2-bootstrap
 import {MaterialModule, MdNativeDateModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+import {DataTableModule,SharedModule,DialogModule,InputTextModule,ButtonModule,ConfirmDialogModule,GrowlModule} from 'primeng/primeng';
+
 
 
 
@@ -32,6 +34,7 @@ import {RegisterComponent} from './register/register.component';
 import {HeaderComponent} from './common/header/header.component';
 import {ConfirmComponent} from './common/dialog/confirm/confirm.component';
 import {MessageComponent} from './common/dialog/message/message.component';
+import { PrimengsComponent } from './primengs/primengs.component';
 
 
 const appRoutes: Routes = [
@@ -40,6 +43,7 @@ const appRoutes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
     {path: 'profile', component: ProfileComponent},
+    {path: 'primengs', component: PrimengsComponent},
 ];
 export function highchartsFactory() {
     return highcharts;
@@ -56,6 +60,7 @@ export function highchartsFactory() {
         HeaderComponent,
         ConfirmComponent,
         MessageComponent,
+        PrimengsComponent,
         //        NgTableComponent,NgTableFilteringDirective, NgTablePagingDirective, NgTableSortingDirective        
     ],
     imports: [
@@ -76,6 +81,8 @@ export function highchartsFactory() {
         BrowserAnimationsModule,
         MaterialModule,
         MdNativeDateModule,
+        
+        DataTableModule,SharedModule,DialogModule,InputTextModule,ButtonModule,ConfirmDialogModule,GrowlModule
 
     ],
     providers: [

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
@@ -101,5 +100,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
->>>>>>> abadf12fa508b8fbf46e3e8449ed4d1c6afb5aff
